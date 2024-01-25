@@ -31,21 +31,15 @@
 
         function onKeyDown(value) {
             const apiUrl = `https://pokeapi.co/api/v2/pokemon/${value}/`;
-            console.log("Hello", apiUrl);
 
             // Fetch data from PokeAPI
             fetch(apiUrl)
                 .then(response => response.json())
                 .then(data => {
                     pokeData = data;
-                    console.log(pokeData);
-
-
                     // DO STUFF HERE
-
                     // Extract relevant information
                     let imageURL = pokeData.sprites.back_shiny
-                    console.log("Prior to slice:" + imageURL)
                     // Display information in HTML
                     const htmlContent = `<div>
                 <h2>${pokeData.name}</h2>
@@ -55,7 +49,6 @@
                     // END OF DO STUFF
                 })
                 .catch(error => {
-                    console.error('Error fetching Pokemon data:', error);
                     pokemonDataElement.innerHTML = 'Error fetching Pokemon data.';
                 });
             return apiUrl
