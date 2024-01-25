@@ -20,12 +20,6 @@ img {
   max-width: 100%;
 }
 
-#image-frame {
-  font-size: x-large;
-  text-align: center;
-  margin: 1rem auto;
-}
-
 #explanation,
 #score {
   padding: 1rem;
