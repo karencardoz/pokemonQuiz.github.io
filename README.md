@@ -20,4 +20,4 @@ Display images from the Pokemon API endpoint: [https://pokeapi.co/api/v2/pokemon
 ## Acknowledgments
 - The Pokemon API for providing images.
 
-Happy quizzing with the Pokemon Quiz! 🐾
+Happy quizzing with the Pokemon Quiz!
